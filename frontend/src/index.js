@@ -1,17 +1,17 @@
+// Importe react
 import React from 'react';
+// Importe ReactDOM pour utiliser méthode spécifique
 import ReactDOM from 'react-dom/client';
-import './index.css';
+// Importe le style
+import "./style/style.css";
+// Importe App
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
+//  Récup id "root", création de la route
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  // Strictmode pour afficher toutes les erreurs
   <React.StrictMode>
     <App />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
